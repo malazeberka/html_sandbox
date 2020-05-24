@@ -15,6 +15,10 @@
     background-color: black;
     color: white;
   }
+
+  .embed-responsive {
+    display: block;
+  }
 </style>
 
 <body class="container text-center">
@@ -45,10 +49,16 @@
       <div>
         <hr>
         <br>
-        <h3 class="h3">YouTube - autorskie utwory house</h3>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/nNVQpm62E_8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <br>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/eZTGi2IpA-4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="mx-5 px-5">
+          <h3 class="h3">YouTube - autorskie utwory house</h3>
+          <div class="my-5 embed-responsive embed-responsive-16by9">
+            <iframe class="d-block embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/nNVQpm62E_8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+          </div>
+          <div class="my-5 embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/eZTGi2IpA-4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
 
         <hr>
       </div>
